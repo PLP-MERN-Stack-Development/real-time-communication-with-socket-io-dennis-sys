@@ -73,14 +73,3 @@ CLIENT_URL=http://localhost:5173
 - If ports conflict, set `PORT` in `server/.env` or run client on a different port via Vite config.
 - This project uses in-memory storage and is not persistent — restart will clear messages and user lists.
 
-**Next Steps / Suggestions:**
-- Add persistent storage (MongoDB, Redis) for messages and users.
-- Add authentication (JWT) and persistent user accounts.
-- Add file upload endpoints (instead of base64-in-message) and streaming for large files.
-- Add tests for socket events and simple E2E tests for message flows.
-
----
-
-If you'd like, I can also:
-- Add a small `.env.example` in `server/`.
-- Update `client/src/socket/socket.js` to read `import.meta.env.VITE_SERVER_URL` (if you want configurable client server URL).
